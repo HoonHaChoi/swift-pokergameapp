@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum GameType : Int, CustomStringConvertible {
+enum GameType : Int, CaseIterable, CustomStringConvertible {
     case seven = 7
     case five = 5
     
@@ -23,12 +23,14 @@ enum GameType : Int, CustomStringConvertible {
     }
     
     static var gameTypeItem : [String] {
-        return [self.seven.description,self.five.description]
+        var item = [String]()
+        GameType.allCases.forEach{ item.append($0.description) }
+        return item
     }
     
 }
 
-enum Participant : Int, CustomStringConvertible {
+enum Participant : Int, CaseIterable, CustomStringConvertible {
     case one = 1
     case two
     case three
@@ -46,8 +48,9 @@ enum Participant : Int, CustomStringConvertible {
     }
     
     static var participantItem : [String] {
-        return [self.one.description,self.two.description,
-                self.three.description,self.four.description]
+        var item = [String]()
+        Participant.allCases.forEach { item.append($0.description) }
+        return item
     }
 }
 
