@@ -108,7 +108,17 @@ class ViewController: UIViewController {
             pockerGameStackView.addArrangedSubview(playerStackView)
             
             playerStackView.addArrangedSubview(makePlayerNameLabel(name: PlayerCard.name))
-            playerStackView.addArrangedSubview(makeCard(cards: PlayerCard.cards.showCards()))
+            
+            let cardStackView = UIStackView()
+            cardStackView.axis = .horizontal
+            cardStackView.distribution = .fillEqually
+            cardStackView.alignment = .fill
+            cardStackView.spacing = -10
+            
+            PlayerCard.cards.showCards { (card) in
+                cardStackView.addArrangedSubview(createImageView(card : card))
+            }
+            playerStackView.addArrangedSubview(cardStackView)
         }
     }
     

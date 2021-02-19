@@ -14,8 +14,10 @@ class Deck {
         handCard.append(card)
     }
     
-    func showCards() -> [Card] {
-        return handCard
+    func showCards(closure : (Card)->()) {
+        handCard.forEach { (card) in
+            closure(card)
+        }
     }
     
     func resetCard() {
