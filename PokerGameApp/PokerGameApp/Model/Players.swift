@@ -20,11 +20,17 @@ class Players {
     }
     
     func drawCard(gameType : Int) {
-        dealer.shareCard(gameType: gameType, players: players)
+        players.forEach { player in
+            (1...gameType).forEach { _ in
+                dealer.shareCard(player : player)
+            }
+        }
     }
     
     func resetCard() {
-        dealer.resetPlayerCard(players: players)
+        players.forEach { player in
+            dealer.resetPlayerCard(player : player)
+        }
     }
     
     func showPlayerCard(closure : (PlayerCard) -> ()) {
@@ -44,7 +50,9 @@ class Players {
     }
     
     func resetPlayer() {
-        dealer.resetPlayerCard(players: players)
+        players.forEach { (player) in
+            dealer.resetPlayerCard(player: player)
+        }
         players.removeAll()
         dealer.redrawCardDeck()
     }
