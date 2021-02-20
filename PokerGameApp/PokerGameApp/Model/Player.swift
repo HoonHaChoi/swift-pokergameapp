@@ -11,7 +11,8 @@ class Player : Playable {
     private var deck = Deck()
     private let name = "참가자"
     private let entryNumber : Int
-
+    private var cardScore = 0
+    
     init(entryNumber : Int) {
         self.entryNumber = entryNumber
     }
@@ -29,4 +30,7 @@ class Player : Playable {
         deck.resetCard()
     }
     
+    func score(result : Int) {
+        cardScore = result
+    }
 }

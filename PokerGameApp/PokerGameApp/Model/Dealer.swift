@@ -11,6 +11,7 @@ class Dealer : Playable {
     private var cardDeck = CardDeck()
     private var deck = Deck()
     private let name = "딜러"
+    private var cardScore: Int = 0
     
     init() {
         cardDeck.shuffle()
@@ -45,5 +46,9 @@ class Dealer : Playable {
     func redrawCardDeck() {
         cardDeck.reset()
         cardDeck.shuffle()
+    }
+    
+    func score(result : Int) {
+        cardScore = result
     }
 }

@@ -48,6 +48,11 @@ enum Rank : Int, CaseIterable, CustomStringConvertible {
             return "\(self.rawValue)"
         }
     }
+    
+    var value : Int {
+        return self.rawValue
+    }
+    
 }
 
 // 카드라는 객체는 참조하지않아도 되기 때문에 struct 구조체를 사용했습니다

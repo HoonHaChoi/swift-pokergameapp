@@ -94,5 +94,9 @@ class PockerGame {
     func countCardDeck() -> Bool {
         return players.countCardDeck(gameType : gameType)
     }
+    
+    func gamescore() {
+        players.winner()
+    }
 }
 

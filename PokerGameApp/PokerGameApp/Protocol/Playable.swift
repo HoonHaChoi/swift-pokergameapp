@@ -12,4 +12,5 @@ protocol Playable {
     func receiveCard(card : Card)
     func resetCards()
     func showCards(closure: (PlayerCard) -> Void)
+    func score(result : Int)
 }

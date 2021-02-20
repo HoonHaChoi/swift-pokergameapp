@@ -67,6 +67,7 @@ class ViewController: UIViewController {
         pokerGame.startGame()
         pokerGame.drawCard()
         setPlayerStackView()
+        print(pokerGame.gamescore())
     }
     
     private func resetPokerGame() {

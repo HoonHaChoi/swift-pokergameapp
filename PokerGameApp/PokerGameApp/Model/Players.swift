@@ -11,6 +11,7 @@ import Foundation
 class Players {
     private var players = [Playable]()
     private let dealer = Dealer()
+    private let rule = Rule()
     
     func addPlayer(particpatin : Int) {
         (1...particpatin).forEach { number in
@@ -55,5 +56,14 @@ class Players {
         }
         players.removeAll()
         dealer.redrawCardDeck()
+    }
+    
+    func winner() {
+        players.forEach { (player) in
+            player.showCards { (playercard) in
+                player.score(result: rule.cardScore(playerCard: playercard))
+            }
+        }
+        
     }
 }

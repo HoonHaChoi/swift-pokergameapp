@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF06B69C25E0BF6800566BC7 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF06B69B25E0BF6800566BC7 /* Rule.swift */; };
 		BFAE2DBE25DA3D1100CC5118 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAE2DBD25DA3D1100CC5118 /* AppDelegate.swift */; };
 		BFAE2DC025DA3D1100CC5118 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAE2DBF25DA3D1100CC5118 /* SceneDelegate.swift */; };
 		BFAE2DC225DA3D1100CC5118 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAE2DC125DA3D1100CC5118 /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF06B69B25E0BF6800566BC7 /* Rule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
 		BFAE2DBA25DA3D1100CC5118 /* PokerGameApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokerGameApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFAE2DBD25DA3D1100CC5118 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFAE2DBF25DA3D1100CC5118 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				BFB69E7925DAB64D009A276E /* CardDeck.swift */,
 				BFB69E8125DB8583009A276E /* PokerGame.swift */,
 				BFB69EAC25DC3028009A276E /* Players.swift */,
+				BF06B69B25E0BF6800566BC7 /* Rule.swift */,
 				BFB69E8425DB8B70009A276E /* Player.swift */,
 				BFB69EB625DD3228009A276E /* Deck.swift */,
 				BFB69E8725DB8B7D009A276E /* Dealer.swift */,
@@ -196,6 +199,7 @@
 				BFAE2DBE25DA3D1100CC5118 /* AppDelegate.swift in Sources */,
 				BFAE2DC025DA3D1100CC5118 /* SceneDelegate.swift in Sources */,
 				BFAE2DD925DA6D4200CC5118 /* Card.swift in Sources */,
+				BF06B69C25E0BF6800566BC7 /* Rule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
